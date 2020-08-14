@@ -14,6 +14,25 @@ body{
     transform-box: fill-box;
 }
 
+#back-wheel{
+    animation: wheel 1.8s linear infinite ;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#man-on-bike{
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+#head{
+    animation: head 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+
+/*Keyframe for wheels*/
 @keyframes wheel {
     from{
         transform: rotatez(0deg);
@@ -22,3 +41,25 @@ body{
         transform: rotatez(360deg);
     }
 }
+
+/*Keyframe for man on bike*/
+@keyframes bike {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(20deg);
+    }
+}
+
+/*Keyframe for hut*/
+@keyframes head {
+    from{
+        transform: translateY(0%) rotateZ(0deg);
+    }
+    to{
+        transform: translateY(47%) rotateZ(2deg);
+
+    }
+}
+
